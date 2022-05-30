@@ -33,6 +33,10 @@ ul, ol {
   src: url(../FONT/Bebas-Regular.ttf);
 }
 @font-face {
+  font-family: "MainTitle";
+  src: url(../FONT/Rubik-Medium.ttf);
+}
+@font-face {
   font-family: "Paragraph";
   src: url(../FONT/MontserratAlternates-Regular.otf);
 }
@@ -186,6 +190,8 @@ ul, ol {
   font-size: 96px;
   color: white;
   margin-bottom: 100px;
+  font-family: "MainTitle";
+  font-weight: 100;
 }
 .top .top-container .title .btns .btn-primary {
   background-color: #FF9B65;
@@ -302,34 +308,34 @@ ul, ol {
   .top-navbar .mobile-navbar .sub-menu .items .items-About-Us #aboutUs {
     cursor: pointer;
   }
-  .top-navbar .mobile-navbar .sub-menu .items .items-About-Us .About-Us-list {
+  .top-navbar .mobile-navbar .sub-menu .items .items-About-Us .Mobile-About-Us-list {
     display: none;
-    position: absolute;
-    top: 50px;
+    padding: 6px 10px;
+    position: relative;
     z-index: 1;
     background-color: white;
-    padding: 6px 10px;
-    transform: translateX(-10px);
+    width: 100%;
   }
-  .top-navbar .mobile-navbar .sub-menu .items .items-About-Us .About-Us-list ul {
+  .top-navbar .mobile-navbar .sub-menu .items .items-About-Us .Mobile-About-Us-list ul {
     padding-left: 0px;
     margin-top: 0px;
+    margin-bottom: 0px;
     letter-spacing: -1px;
     font-family: "Paragraph";
     font-size: 16px;
   }
-  .top-navbar .mobile-navbar .sub-menu .items .items-About-Us .About-Us-list ul li {
+  .top-navbar .mobile-navbar .sub-menu .items .items-About-Us .Mobile-About-Us-list ul li {
     padding: 5px 0px 5px 0px;
     border-bottom: 2px solid white;
     transition: all 0.5s;
   }
-  .top-navbar .mobile-navbar .sub-menu .items .items-About-Us .About-Us-list ul li a {
+  .top-navbar .mobile-navbar .sub-menu .items .items-About-Us .Mobile-About-Us-list ul li a {
     transition: all 0.5;
   }
-  .top-navbar .mobile-navbar .sub-menu .items .items-About-Us .About-Us-list ul li:hover {
+  .top-navbar .mobile-navbar .sub-menu .items .items-About-Us .Mobile-About-Us-list ul li:hover {
     border-bottom: 2px solid #FF9B65;
   }
-  .top-navbar .mobile-navbar .sub-menu .items .items-About-Us .About-Us-list ul li:hover a {
+  .top-navbar .mobile-navbar .sub-menu .items .items-About-Us .Mobile-About-Us-list ul li:hover a {
     background: linear-gradient(141deg, rgb(255, 155, 101) 0%, rgb(234, 123, 129) 62%, rgb(188, 108, 148) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

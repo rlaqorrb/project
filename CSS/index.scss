@@ -18,6 +18,11 @@ $lightBlack-cr : #2F4858;
   src: url(../FONT/Bebas-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'MainTitle';
+  src: url(../FONT/Rubik-Medium.ttf);
+}
+
 @font-face{
   font-family: 'Paragraph';
   src: url(../FONT/MontserratAlternates-Regular.otf);
@@ -31,6 +36,8 @@ $lightBlack-cr : #2F4858;
   color: white;
   box-shadow: -6px -5px 20px rgba(0, 0, 0, 0.473);
 }
+
+
 
 .btn{
   @include btn(45px, 140px);
@@ -179,6 +186,8 @@ $lightBlack-cr : #2F4858;
         font-size: 96px;
         color: white;
         margin-bottom: 100px;
+        font-family: 'MainTitle';
+        font-weight: 100;
       }
       .btns{
         .btn-primary{
@@ -326,10 +335,11 @@ $lightBlack-cr : #2F4858;
             #aboutUs{
               cursor: pointer;
             }
-            .About-Us-list{
+            .Mobile-About-Us-list{
               ul{
                 padding-left: 0px;
                 margin-top: 0px;
+                margin-bottom: 0px;
                 letter-spacing: -1px;
                 font-family: 'Paragraph';
                 font-size: 16px;
@@ -351,12 +361,11 @@ $lightBlack-cr : #2F4858;
                 }
               }
               display: none;
-              position: absolute;
-              top: 50px;
+              padding: 6px 10px;
+              position: relative;
               z-index: 1;
               background-color: white;
-              padding: 6px 10px;
-              transform: translateX(-10px);
+              width: 100%;
             }
           }
         }
