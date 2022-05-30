@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+  
+
+
+  <div class="container">
+    <div class="top-navbar">
+      <div class="navbar">
+        <div class="logo">
+          <div class="logo-content">
+            <a href="">VoIdStrIng</a>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-home">            
+            <a href="">Home</a>
+          </div>
+          <div class="items-Our-Works">
+            <a href="">Our Works</a>
+          </div>
+          <div class="items-About-Us">
+            <a id="aboutUs">About Us</a>
+            <div class="About-Us-list">
+              <ul>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Our Story</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="items-FAQ">
+            <a href="">FAQ</a>
+          </div>
+        </div>
+        <div class="maker">
+          <p>by Baekgyu & Seeun</p>
+        </div>
+      </div>
+
+      <!-- Mobile Navbar -->
+      <div class="mobile-navbar">
+        <div class="logo">
+          <div class="logo-content">
+            <a href="">VoIdStrIng</a>
+          </div>
+        </div>
+        <button id="navBtn" class="sub-menu-btn">=</button>
+        <div class="sub-menu">
+          <div class="sub-menu-logo">
+            <a href="">VoIdStrIng</a>
+          </div>
+          <div class="items">
+            <div class="items-home">            
+              <a href="">Home</a>
+            </div>
+            <div class="items-Our-Works">
+              <a href="">Our Works</a>
+            </div>
+            <div class="items-About-Us">
+              <a id="aboutUs">About Us</a>
+              <div class="About-Us-list">
+                <ul>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Our Story</a></li>
+                  <li><a href="">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="items-FAQ">
+              <a href="">FAQ</a>
+            </div>
+          </div>
+          <div class="maker">
+            <p>by Baekgyu & Seeun</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top">
+      <!-- <div class="custom-shape-divider-bottom-1653906771">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+      </div> -->
+      <div class="top-container">
+        <div class="title">
+          <h1>Void String Is The Best</h1>
+          <div class="btns">
+            <button class="btn btn-primary">Button 1</button>
+            <button class="btn btn-secondary">Button 2</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    
+  </div>
+
+
+
+
+
+
+<script>
+  $('#aboutUs').on('click', function(){
+    $('.About-Us-list').slideToggle();
+  })
+
+  $('#navBtn').on('click',function(){
+    $('.sub-menu').toggleClass('slide-left');
+  })
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+body, p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+div{
+  box-sizing: border-box;
+  
+}
+
+button::selection, h1::selection, p::selection, a::selection{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul, ol{
+  list-style: none;
+}
