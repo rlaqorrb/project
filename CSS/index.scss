@@ -230,6 +230,9 @@ $lightBlack-cr : #2F4858;
 // }
 
 @media screen and (max-width : 600px) {
+  .container{
+    overflow: hidden;
+  }
   .top-navbar{
     .navbar{
       display: none;
@@ -240,6 +243,7 @@ $lightBlack-cr : #2F4858;
       justify-content: space-around;
       align-items: center;
       height: 100%;
+      width: 100%;
       .logo{
         font-family: 'Logo';
         font-size: 22px;

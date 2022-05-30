@@ -204,6 +204,10 @@ ul, ol {
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    overflow: hidden;
+  }
+
   .top-navbar .navbar {
     display: none;
   }
@@ -213,6 +217,7 @@ ul, ol {
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    width: 100%;
   }
   .top-navbar .mobile-navbar .logo {
     font-family: "Logo";
