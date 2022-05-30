@@ -234,7 +234,9 @@ ul, ol {
     font-size: 30px;
   }
   .top-navbar .mobile-navbar .sub-menu {
-    background-image: url("../SVG/layered-waves-haikei (4).svg");
+    background-image: url("../SVG/layered-waves-haikei (5).svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     transform: translateX(50vw);
     transition: all 0.5s;
     position: absolute;

@@ -260,7 +260,9 @@ $lightBlack-cr : #2F4858;
         font-size: 30px;
       }
       .sub-menu{
-        background-image: url('../SVG/layered-waves-haikei\ \(4\).svg');
+        background-image: url('../SVG/layered-waves-haikei\ \(5\).svg');
+        background-repeat: no-repeat;
+        background-size: cover;
         transform: translateX(50vw);
         transition: all .5s;
         position: absolute;
