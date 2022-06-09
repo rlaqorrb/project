@@ -170,47 +170,6 @@ ul, ol {
   font-family: "Title";
 }
 
-.top {
-  position: relative;
-  width: 100vw;
-  height: 94vh;
-  background-image: url(../IMG/cool-background\ \(2\).png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.top .top-container {
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  top: 30%;
-}
-.top .top-container .title {
-  text-align: center;
-}
-.top .top-container .title h1 {
-  font-size: 96px;
-  color: white;
-  margin-bottom: 100px;
-  font-family: "MainTitle";
-  font-weight: 100;
-}
-.top .top-container .title .btns .btn-primary {
-  background-color: #FF9B65;
-  margin: 0 50px 0 10px;
-}
-.top .top-container .title .btns .btn-secondary {
-  background-color: #EA7B81;
-  margin: 0 10px 0 50px;
-}
-
-.middle {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 50vh;
-}
-
 @media screen and (max-width: 600px) {
   .container {
     overflow: hidden;
@@ -355,28 +314,4 @@ ul, ol {
   .top-navbar .mobile-navbar .slide-left {
     transform: translateX(0);
   }
-}
-@media screen and (max-width: 600px) {
-  .top {
-    width: 100vw;
-    height: 94vh;
-    background-image: url(../IMG/trianglify-lowres\ \(1\).png);
-  }
-  .top .top-container .title h1 {
-    font-size: 22px;
-  }
-  .top .top-container .title .btns {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .top .top-container .title .btns .btn {
-    margin: 0px;
-    border: none;
-    border-radius: 42px;
-    height: 40px;
-    width: 80px;
-    color: white;
-    box-shadow: -6px -5px 20px rgba(0, 0, 0, 0.473);
-    font-size: 16px;
-  }
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=1stSite.css.map */

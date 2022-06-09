@@ -1,3 +1,5 @@
+@use '_var.scss';
+
 body, p, h1, h2, h3, h4, h5, h6{
   margin: 0;
 }
@@ -18,4 +20,165 @@ a{
 
 ul, ol{
   list-style: none;
+}
+
+
+
+
+@font-face{
+  font-family: 'Logo';
+  src: url(../FONT/akashi.ttf);
+}
+
+@font-face{
+  font-family: 'Title';
+  src: url(../FONT/Bebas-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'MainTitle';
+  src: url(../FONT/Rubik-Medium.ttf);
+}
+
+@font-face{
+  font-family: 'Paragraph';
+  src: url(../FONT/MontserratAlternates-Regular.otf);
+}
+
+@mixin btn($size1, $size2) { 
+  border: none;
+  border-radius: 42px;
+  height: $size1;
+  width: $size2;
+  color: white;
+  box-shadow: -6px -5px 20px rgba(0, 0, 0, 0.473);
+}
+
+
+
+.btn{
+  @include btn(45px, 140px);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.btn:hover{
+  @include btn(55px, 180px);
+}
+
+.container{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.top-navbar{
+  height: 6vh;
+  width: 100vw;
+  border-bottom: 2px solid #eeeeee;
+
+  .mobile-navbar{
+    display: none;
+  }
+
+  .navbar{
+    height: 100%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+      font-family: 'Logo';
+      font-size: 32px;
+      font-weight: 900;
+    }
+    .logo .logo-content a{
+      transition: all .5s;
+      background: linear-gradient(141deg, rgba(255,155,101,1) 0%, rgba(234,123,129,1) 62%, rgba(188,108,148,1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .logo .logo-content a:hover{
+
+    }
+    
+    .items{
+      width: 50%;
+      display: flex;
+      margin-right: auto;
+      margin-left: auto;
+      justify-content: space-around;
+      font-family: 'Title';
+      font-size: 20px;
+      >div{
+        padding: 0px 5px 0px 5px;
+        transition: all .4s;
+        border-bottom: 2px solid white;
+        a{
+          transition: all .4s;
+        }
+      }
+      >div:hover{
+        >a{
+          background: linear-gradient(141deg, rgba(255,155,101,1) 0%, rgba(234,123,129,1) 62%, rgba(188,108,148,1) 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        border-bottom: 2px solid var.$main-cr;
+      }
+      .items-About-Us::after{
+        content: '▼';
+        font-size: 13px;
+        vertical-align: middle;
+      }
+      .items-About-Us::after:hover{
+        color: var.$main-cr;
+      }
+      .items-About-Us{
+        #aboutUs{
+          cursor: pointer;
+        }
+        .About-Us-list{
+          ul{
+            padding-left: 0px;
+            margin-top: 0px;
+            letter-spacing: -1px;
+            font-family: 'Paragraph';
+            font-size: 16px;
+            li{
+              padding: 5px 0px 5px 0px;
+              border-bottom: 2px solid white;
+              transition: all .5s;
+              a{
+                transition: all .5;
+              }
+            }
+            li:hover{
+              a{
+                background: linear-gradient(141deg, rgba(255,155,101,1) 0%, rgba(234,123,129,1) 62%, rgba(188,108,148,1) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+              border-bottom: 2px solid var.$main-cr;
+            }
+          }
+          display: none;
+          position: absolute;
+          top: 50px;
+          z-index: 1;
+          background-color: white;
+          padding: 6px 10px;
+          transform: translateX(-10px);
+        }
+      }
+    }
+    .maker{
+      color: gray;
+      font-size: 16px;
+      font-family: 'Title';
+    }
+  }
 }
